@@ -1,0 +1,245 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+
+body{
+    width:100%;
+    font-size: 1.4em;
+    font-family: 'cwTeXYen', sans-serif;
+    color:#000000;
+    display: flex;
+    justify-content: center;
+}
+
+.navi_link_animation{  
+    text-decoration-line: none;
+    color:#ffffff;
+    margin-left: 5em;
+}
+
+.navi_link_animation::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    transition: width .4s;
+}
+
+.navi_link_animation:hover::after{
+    width: 100%;
+}
+
+.container{
+    width: 80%;
+}
+
+/*header導覽列*/
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.header_nav{
+    height: 60px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo{
+    margin-left:5%;
+    width: 140px;
+    height: 50px;
+}
+
+.nav_ul{
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+}
+
+
+/*header主視覺*/
+
+
+
+.main_view{
+    height: 433px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main_view_text_space{
+    position: absolute;
+    top: 403px;
+    width: 100%;
+    height: 30px;
+    background: rgba(255,255,255,0.6);
+
+}
+
+.main_view_text{
+    position: absolute;
+    top: 358px;
+    width: 520px;
+    text-align: center;
+    color: #000000;
+    background: rgba(255,255,255,0.6);
+    margin-bottom: 0;
+    margin-top:0;
+    border-top:solid rgba(255,255,255,0.1) 20px;
+}
+
+/*article導覽列*/
+.airticle_nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    background-color: #b9d3d7;
+    justify-content: space-between;
+}
+
+.first_grade{
+    display: flex;
+    width: 510px;
+    flex-direction: row;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.second_grade{
+    display: flex;
+    width: 510px;
+    flex-direction: row;
+    margin-left: 4%;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.grade_text{
+    margin-right:20px;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.semester_text{
+    text-decoration-line: none;
+    color: #000000;
+    margin-right:5px;
+    font-size: 0.9em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.semester_text:hover{
+    font-size: 1em;
+}
+
+.semester_text::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #000000;
+    transition: width .4s;
+}
+
+.semester_text:hover::after{
+    width: 100%;
+}
+
+/*article內文*/
+
+.show_imfo{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.show_pair_box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.show_box{
+    width: 465px;
+}
+.show_img{
+    width: 465px;
+    height: 281px;
+}
+
+.show_title{
+    display: flex;
+    flex-direction: row;
+}
+
+.title_name{
+    text-decoration-line: none;
+    color: #000000;
+    margin:5px 0 5px 0;
+    
+}
+
+.title_name:hover{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.title_name::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #000000;
+    transition: width .4s;
+}
+
+.title_name:hover::after{
+    width: 100%;
+}
+
+.title_time{
+    margin-bottom:5px;
+    margin-top: 10.6px;
+    margin-left: 10px;
+    font-size: 0.7em;
+}
+.show_text{
+    font-size: 0.9em;
+    margin-top:5px;
+    margin-bottom: 0;
+}
+
+
+/*footer*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000000;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.footer_text{
+    margin-left: 5%;
+    color: #ffffff;
+    font-size: 0.6em;
+}
+
+.icon_box{
+    margin-right: 5%;
+    height: 32px;
+}
+
+.icon{
+    width: 32px;
+    margin-left: 10px;
+}
